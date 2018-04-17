@@ -44,6 +44,7 @@ app.get('/', (req, res) => {
     res.render('home.hbs', {
         currentTitle: 'Home Page',
         welcomeMessage: 'Welcome to the home page',
+        description: `This is just a test project using node.js as server language `
        
     })
     
