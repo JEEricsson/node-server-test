@@ -53,13 +53,16 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) =>{
     res.render('about.hbs', {
         currentTitle: 'About Page',
+        welcomeMessage: 'Welcome to the about page',
+        description: `As said. This is just a small test project`
        
     })
 })
 app.get('/projects', (req, res) =>{
     res.render('projects.hbs', {
         currentTitle: 'Projects',
-        welcomeMessage: 'Welcome to the portfolio page'
+        welcomeMessage: 'Welcome to the portfolio page',
+        description: `Just the description of the portfolio.`
        
     })
 })
